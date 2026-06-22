@@ -1,0 +1,227 @@
+{
+  "resourceType": "Procedure",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata. Field dengan suffix [x] seperti performed[x] merepresentasikan choice data type.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/procedures",
+      "value": "12345"
+    }
+  ],
+  "instantiatesCanonical": [
+    "PlanDefinition/appendectomy-protocol"
+  ],
+  "instantiatesUri": [
+    "http://example.org/appendectomy-protocol"
+  ],
+  "basedOn": [
+    {
+      "reference": "CarePlan/example"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/parent-surgery"
+    }
+  ],
+  "status": "completed",
+  "statusReason": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "398166005",
+        "display": "Performed"
+      }
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "387713003",
+        "display": "Surgical procedure"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "80146002",
+        "display": "Appendectomy"
+      }
+    ],
+    "text": "Operasi Usus Buntu"
+  },
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "encounter": {
+    "reference": "Encounter/example",
+    "display": "Kunjungan Rawat Inap"
+  },
+  "performedDateTime": "2025-04-05T09:00:00+07:00",
+  "performedPeriod": {
+    "start": "2025-04-05T09:00:00+07:00",
+    "end": "2025-04-05T11:30:00+07:00"
+  },
+  "performedString": "Sekitar bulan April 2025",
+  "performedAge": {
+    "value": 30,
+    "unit": "years",
+    "system": "http://unitsofmeasure.org",
+    "code": "a"
+  },
+  "performedRange": {
+    "low": {
+      "value": 25
+    },
+    "high": {
+      "value": 35
+    }
+  },
+  "recorder": {
+    "reference": "Practitioner/example",
+    "display": "Dr. Andi (Pencatat)"
+  },
+  "asserter": {
+    "reference": "Practitioner/example",
+    "display": "Dr. Andi"
+  },
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "304292004",
+            "display": "Surgeon"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/surgeon",
+        "display": "Dr. Budi Spesialis Bedah"
+      },
+      "onBehalfOf": {
+        "reference": "Organization/hospital",
+        "display": "RS Sehat Selalu"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/operating-room",
+    "display": "Ruang Operasi 1"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "116680003",
+          "display": "Acute appendicitis"
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/example"
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "66754008",
+          "display": "Appendix structure"
+        }
+      ],
+      "text": "Apendiks"
+    }
+  ],
+  "outcome": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "385669000",
+        "display": "Successful"
+      }
+    ]
+  },
+  "report": [
+    {
+      "reference": "DiagnosticReport/example"
+    }
+  ],
+  "complication": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "131148009",
+          "display": "Bleeding"
+        }
+      ]
+    }
+  ],
+  "complicationDetail": [
+    {
+      "reference": "Condition/bleeding-complication"
+    }
+  ],
+  "followUp": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "18949003",
+          "display": "Change of dressing"
+        }
+      ],
+      "text": "Ganti perban setelah 3 hari"
+    }
+  ],
+  "note": [
+    {
+      "text": "Operasi berjalan lancar, pasien stabil."
+    }
+  ],
+  "focalDevice": [
+    {
+      "action": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "282089006",
+            "display": "Implantation"
+          }
+        ]
+      },
+      "manipulated": {
+        "reference": "Device/example"
+      }
+    }
+  ],
+  "usedReference": [
+    {
+      "reference": "Device/scalpel"
+    }
+  ],
+  "usedCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "79068005",
+          "display": "Needle"
+        }
+      ]
+    }
+  ]
+}

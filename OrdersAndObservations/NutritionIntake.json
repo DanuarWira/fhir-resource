@@ -1,0 +1,181 @@
+{
+  "resourceType": "NutritionIntake",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/nutrition-intakes",
+      "value": "12345"
+    }
+  ],
+  "instantiatesCanonical": [
+    "ActivityDefinition/diet-plan"
+  ],
+  "instantiatesUri": [
+    "http://example.org/diet-guidelines"
+  ],
+  "basedOn": [
+    {
+      "reference": "NutritionOrder/example"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Observation/example"
+    }
+  ],
+  "status": "completed",
+  "statusReason": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "123456",
+          "display": "Finished meal"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "226379006",
+        "display": "Oral feeding"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "occurrenceDateTime": "2026-06-22T08:00:00Z",
+  "occurrencePeriod": {
+    "start": "2026-06-22T08:00:00Z",
+    "end": "2026-06-22T08:30:00Z"
+  },
+  "recorded": "2026-06-22T08:45:00Z",
+  "reportedBoolean": false,
+  "reportedReference": {
+    "reference": "Practitioner/nurse"
+  },
+  "consumedItem": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "226887002",
+            "display": "Dietary liquid"
+          }
+        ]
+      },
+      "nutritionProduct": {
+        "concept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444981005",
+              "display": "Ensure Plus"
+            }
+          ]
+        }
+      },
+      "schedule": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "amount": {
+        "value": 250,
+        "unit": "mL"
+      },
+      "rateQuantity": {
+        "value": 50,
+        "unit": "mL/h"
+      },
+      "rateRatio": {
+        "numerator": {
+          "value": 250,
+          "unit": "mL"
+        },
+        "denominator": {
+          "value": 5,
+          "unit": "h"
+        }
+      },
+      "notConsumed": false,
+      "notConsumedReason": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "266758009",
+            "display": "Nausea"
+          }
+        ]
+      }
+    }
+  ],
+  "ingredientLabel": [
+    {
+      "nutrient": {
+        "concept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "11224000",
+              "display": "Protein"
+            }
+          ]
+        }
+      },
+      "amount": {
+        "value": 15,
+        "unit": "g"
+      }
+    }
+  ],
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "224608005",
+            "display": "Healthcare professional"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/nurse"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/ward"
+  },
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/example"
+    }
+  ],
+  "reason": [
+    {
+      "reference": {
+        "reference": "Condition/example"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Pasien menghabiskan seluruh porsi."
+    }
+  ]
+}

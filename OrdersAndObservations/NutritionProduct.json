@@ -1,0 +1,141 @@
+{
+  "resourceType": "NutritionProduct",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata. (R5+)</div>"
+  },
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "226887002",
+          "display": "Dietary liquid"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "444981005",
+        "display": "Ensure Plus"
+      }
+    ]
+  },
+  "manufacturer": [
+    {
+      "reference": "Organization/manufacturer"
+    }
+  ],
+  "nutrient": [
+    {
+      "item": {
+        "concept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "11224000",
+              "display": "Protein"
+            }
+          ]
+        }
+      },
+      "amount": [
+        {
+          "value": 13,
+          "unit": "g"
+        }
+      ]
+    },
+    {
+      "item": {
+        "concept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "11225000",
+              "display": "Carbohydrate"
+            }
+          ]
+        }
+      },
+      "amount": [
+        {
+          "value": 50,
+          "unit": "g"
+        }
+      ]
+    }
+  ],
+  "ingredient": [
+    {
+      "item": {
+        "concept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "258700003",
+              "display": "Water"
+            }
+          ]
+        }
+      },
+      "amount": [
+        {
+          "value": 200,
+          "unit": "mL"
+        }
+      ]
+    }
+  ],
+  "knownAllergen": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "91936005",
+          "display": "Allergy to milk"
+        }
+      ]
+    }
+  ],
+  "characteristic": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "255621008",
+            "display": "Flavor"
+          }
+        ]
+      },
+      "valueString": "Vanilla"
+    }
+  ],
+  "instance": {
+    "quantity": {
+      "value": 237,
+      "unit": "mL"
+    },
+    "identifier": [
+      {
+        "system": "http://acme.org/lot",
+        "value": "LOT123"
+      }
+    ],
+    "name": "Ensure Plus Vanilla",
+    "lotNumber": "LOT123",
+    "expiry": "2027-12-31T23:59:59Z",
+    "useBy": "2027-12-31T23:59:59Z"
+  },
+  "note": [
+    {
+      "text": "Mengandung protein susu sapi."
+    }
+  ]
+}

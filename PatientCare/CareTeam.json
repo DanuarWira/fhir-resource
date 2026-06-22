@@ -1,0 +1,121 @@
+{
+  "resourceType": "CareTeam",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/careteams",
+      "value": "73927"
+    }
+  ],
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LA27976-2",
+          "display": "Encounter-focused care team"
+        }
+      ]
+    }
+  ],
+  "name": "Tim Perawatan Obesitas Terpadu",
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "period": {
+    "start": "2026-06-01",
+    "end": "2026-12-31"
+  },
+  "participant": [
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17561000",
+              "display": "Cardiologist"
+            }
+          ],
+          "text": "Dokter Spesialis Jantung (Konsultan)"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/example",
+        "display": "Dr. Andi"
+      },
+      "onBehalfOf": {
+        "reference": "Organization/hospital",
+        "display": "RS Sehat Selalu"
+      },
+      "period": {
+        "start": "2026-06-01"
+      }
+    },
+    {
+      "role": [
+        {
+          "text": "Ahli Gizi Klinis"
+        }
+      ],
+      "member": {
+        "reference": "Practitioner/dietitian",
+        "display": "Siti (Ahli Gizi)"
+      }
+    },
+    {
+      "role": [
+        {
+          "text": "Keluarga/Pendamping"
+        }
+      ],
+      "member": {
+        "reference": "RelatedPerson/wife",
+        "display": "Istri Pasien"
+      }
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "414916001",
+          "display": "Obesity"
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/example"
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "Organization/hospital",
+      "display": "Klinik Gizi Terpadu RS Sehat Selalu"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "021-555-1234",
+      "use": "work"
+    }
+  ],
+  "note": [
+    {
+      "text": "Tim bertemu setiap bulan di minggu pertama untuk evaluasi."
+    }
+  ]
+}

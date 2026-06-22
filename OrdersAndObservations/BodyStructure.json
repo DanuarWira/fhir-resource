@@ -1,0 +1,55 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/bodystructures",
+      "value": "12345"
+    }
+  ],
+  "active": true,
+  "morphology": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "4147007",
+        "display": "Mass"
+      }
+    ],
+    "text": "Massa Tumor"
+  },
+  "location": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "3613001",
+        "display": "Entire right lung"
+      }
+    ]
+  },
+  "locationQualifier": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "255549009",
+          "display": "Anterior"
+        }
+      ]
+    }
+  ],
+  "description": "Massa teraba di paru kanan anterior",
+  "image": [
+    {
+      "contentType": "image/jpeg",
+      "url": "http://example.org/images/lung-mass.jpg"
+    }
+  ],
+  "patient": {
+    "reference": "Patient/example"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "resourceType": "BiologicallyDerivedProduct",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/identifiers/blood-bags",
+      "value": "12345678"
+    }
+  ],
+  "productCategory": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/biologicallyderived-product-category",
+        "code": "cells",
+        "display": "Cells"
+      }
+    ]
+  },
+  "productCode": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "119297000",
+        "display": "Blood product"
+      }
+    ]
+  },
+  "status": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/biologicallyderived-product-status",
+        "code": "available",
+        "display": "Available"
+      }
+    ]
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/example"
+    }
+  ],
+  "quantity": 1,
+  "parent": [
+    {
+      "reference": "BiologicallyDerivedProduct/parent-example"
+    }
+  ],
+  "collection": {
+    "collector": {
+      "reference": "Practitioner/example"
+    },
+    "source": {
+      "reference": "Patient/donor-example"
+    },
+    "collectedDateTime": "2026-06-20T08:00:00Z",
+    "collectedPeriod": {
+      "start": "2026-06-20T08:00:00Z",
+      "end": "2026-06-20T09:00:00Z"
+    }
+  },
+  "processing": [
+    {
+      "description": "Centrifugation",
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "85881005",
+            "display": "Centrifugation"
+          }
+        ]
+      },
+      "additive": {
+        "reference": "Substance/example"
+      },
+      "timeDateTime": "2026-06-20T10:00:00Z",
+      "timePeriod": {
+        "start": "2026-06-20T10:00:00Z",
+        "end": "2026-06-20T11:00:00Z"
+      }
+    }
+  ],
+  "manipulation": {
+    "description": "Washing",
+    "timeDateTime": "2026-06-20T12:00:00Z",
+    "timePeriod": {
+      "start": "2026-06-20T12:00:00Z",
+      "end": "2026-06-20T13:00:00Z"
+    }
+  },
+  "storage": [
+    {
+      "description": "Refrigerator",
+      "temperature": 4.0,
+      "scale": "celsius",
+      "duration": {
+        "value": 42,
+        "unit": "days",
+        "system": "http://unitsofmeasure.org",
+        "code": "d"
+      }
+    }
+  ],
+  "property": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://acme.org/properties",
+            "code": "abo-group",
+            "display": "ABO Blood Group"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "112143006",
+            "display": "Blood group A"
+          }
+        ]
+      }
+    }
+  ]
+}

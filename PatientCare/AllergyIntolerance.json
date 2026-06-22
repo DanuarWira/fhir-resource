@@ -1,0 +1,135 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata. Field dengan suffix [x] seperti onset[x] merepresentasikan choice data type (pilih salah satu tipe data).</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.com/ids/patients/risks",
+      "value": "49476534"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "type": "allergy",
+  "category": [
+    "food"
+  ],
+  "criticality": "high",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "91935009",
+        "display": "Allergy to peanut"
+      }
+    ],
+    "text": "Alergi Kacang"
+  },
+  "patient": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "encounter": {
+    "reference": "Encounter/example",
+    "display": "Kunjungan Rawat Jalan"
+  },
+  "onsetDateTime": "2004",
+  "onsetAge": {
+    "value": 7,
+    "unit": "years",
+    "system": "http://unitsofmeasure.org",
+    "code": "a"
+  },
+  "onsetPeriod": {
+    "start": "2004-01-01",
+    "end": "2004-12-31"
+  },
+  "onsetRange": {
+    "low": {
+      "value": 5
+    },
+    "high": {
+      "value": 10
+    }
+  },
+  "onsetString": "Saat masih anak-anak",
+  "recordedDate": "2014-10-09T14:58:00+11:00",
+  "recorder": {
+    "reference": "Practitioner/example",
+    "display": "Dr. Andi"
+  },
+  "asserter": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "lastOccurrence": "2012-06",
+  "note": [
+    {
+      "authorReference": {
+        "reference": "Practitioner/example"
+      },
+      "time": "2014-10-09T14:58:00+11:00",
+      "text": "Pasien mengalami syok anafilaktik saat makan selai kacang."
+    }
+  ],
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "11920000",
+            "display": "Peanut part"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39579001",
+              "display": "Anaphylaxis"
+            }
+          ]
+        }
+      ],
+      "description": "Sesak napas parah, gatal, kemerahan",
+      "onset": "2012-06-12",
+      "severity": "severe",
+      "exposureRoute": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral route"
+          }
+        ]
+      },
+      "note": [
+        {
+          "text": "Reaksi muncul sangat cepat setelah konsumsi."
+        }
+      ]
+    }
+  ]
+}

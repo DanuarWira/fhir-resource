@@ -1,0 +1,239 @@
+{
+  "resourceType": "DeviceDefinition",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "description": "Spesifikasi model Oksimeter Denyut M-100",
+  "identifier": [
+    {
+      "system": "http://acme.org/devicedefinitions",
+      "value": "M-100-Spec"
+    }
+  ],
+  "udiDeviceIdentifier": [
+    {
+      "deviceIdentifier": "00123456789012",
+      "issuer": "http://hl7.org/fhir/NamingSystem/fda-udi",
+      "jurisdiction": "http://hl7.org/fhir/NamingSystem/fda-udi",
+      "marketDistribution": [
+        {
+          "marketJurisdiction": "US",
+          "subJurisdiction": "http://hl7.org/fhir/NamingSystem/fda-udi"
+        }
+      ]
+    }
+  ],
+  "manufacturerReference": {
+    "reference": "Organization/manufacturer"
+  },
+  "manufacturerString": "Medtronic",
+  "deviceName": [
+    {
+      "name": "Pulse Oximeter M-100",
+      "type": "registered-name"
+    }
+  ],
+  "modelNumber": "M-100",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "118185001",
+        "display": "Pulse oximeter"
+      }
+    ]
+  },
+  "specialization": [
+    {
+      "systemType": "urn:iso:std:iso:11073:10404",
+      "version": "1.0"
+    }
+  ],
+  "hasPart": [
+    {
+      "reference": "DeviceDefinition/sensor-part"
+    }
+  ],
+  "packaging": [
+    {
+      "identifier": {
+        "system": "http://acme.org/packaging",
+        "value": "PKG-001"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "123456",
+            "display": "Box"
+          }
+        ]
+      },
+      "count": 1,
+      "device": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "118185001"
+              }
+            ]
+          },
+          "device": [
+            {
+              "reference": "DeviceDefinition/example"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/device-version-type",
+            "code": "hardware"
+          }
+        ]
+      },
+      "component": {
+        "system": "http://acme.org/components",
+        "value": "board"
+      },
+      "value": "v1.0"
+    }
+  ],
+  "safety": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "code": "MR Safe"
+        }
+      ]
+    }
+  ],
+  "shelfLifeStorage": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/spdx-license",
+            "code": "battery"
+          }
+        ]
+      },
+      "periodDuration": {
+        "value": 5,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+      },
+      "specialPrecautionsForStorage": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "123456",
+              "display": "Store at room temperature"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "physicalCharacteristics": {
+    "height": {
+      "value": 5,
+      "unit": "cm"
+    },
+    "width": {
+      "value": 3,
+      "unit": "cm"
+    },
+    "depth": {
+      "value": 2,
+      "unit": "cm"
+    },
+    "weight": {
+      "value": 50,
+      "unit": "g"
+    }
+  },
+  "languageCode": [
+    {
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ]
+    }
+  ],
+  "capability": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://acme.org/capabilities",
+            "code": "measure-spo2"
+          }
+        ]
+      },
+      "description": [
+        {
+          "text": "Measures blood oxygen saturation"
+        }
+      ]
+    }
+  ],
+  "property": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://acme.org/properties",
+            "code": "accuracy"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2,
+        "unit": "%"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "system": "url",
+      "value": "http://manufacturer.com/support"
+    }
+  ],
+  "url": "http://manufacturer.com/products/m-100",
+  "note": [
+    {
+      "text": "Requires 2 AAA batteries."
+    }
+  ],
+  "material": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "123456",
+            "display": "Plastic"
+          }
+        ]
+      },
+      "alternate": false,
+      "allergenicIndicator": false
+    }
+  ]
+}

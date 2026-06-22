@@ -1,0 +1,132 @@
+{
+  "resourceType": "Task",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/tasks",
+      "value": "12345"
+    }
+  ],
+  "instantiatesCanonical": "ActivityDefinition/example",
+  "instantiatesUri": "http://example.org/task-protocol",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/example"
+    }
+  ],
+  "groupIdentifier": {
+    "system": "http://acme.org/groups",
+    "value": "group1"
+  },
+  "partOf": [
+    {
+      "reference": "Task/parent-task"
+    }
+  ],
+  "status": "in-progress",
+  "statusReason": {
+    "text": "Menunggu konfirmasi ketersediaan alat."
+  },
+  "businessStatus": {
+    "text": "Sedang dikerjakan tim IT"
+  },
+  "intent": "order",
+  "priority": "routine",
+  "code": {
+    "text": "Periksa fungsi alat"
+  },
+  "description": "Lakukan kalibrasi bulanan alat oksimeter.",
+  "focus": {
+    "reference": "Device/example"
+  },
+  "for": {
+    "reference": "Patient/example"
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "executionPeriod": {
+    "start": "2026-06-22T08:00:00Z",
+    "end": "2026-06-22T12:00:00Z"
+  },
+  "authoredOn": "2026-06-22T08:00:00Z",
+  "lastModified": "2026-06-22T09:00:00Z",
+  "requester": {
+    "reference": "Practitioner/example"
+  },
+  "performerType": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "123456",
+          "display": "Technician"
+        }
+      ]
+    }
+  ],
+  "owner": {
+    "reference": "Practitioner/technician"
+  },
+  "location": {
+    "reference": "Location/ward"
+  },
+  "reasonCode": [
+    {
+      "text": "Jadwal pemeliharaan rutin"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Observation/example"
+    }
+  ],
+  "insurance": [
+    {
+      "reference": "Coverage/example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Alat belum dapat diambil karena masih digunakan pasien."
+    }
+  ],
+  "relevantHistory": [
+    {
+      "reference": "Provenance/example"
+    }
+  ],
+  "restriction": {
+    "repetitions": 1,
+    "period": {
+      "end": "2026-06-30"
+    },
+    "recipient": [
+      {
+        "reference": "Practitioner/technician"
+      }
+    ]
+  },
+  "input": [
+    {
+      "type": {
+        "text": "Manual"
+      },
+      "valueString": "Buku Panduan Kalibrasi"
+    }
+  ],
+  "output": [
+    {
+      "type": {
+        "text": "Sertifikat Kalibrasi"
+      },
+      "valueReference": {
+        "reference": "DocumentReference/example"
+      }
+    }
+  ]
+}

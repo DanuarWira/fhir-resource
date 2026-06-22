@@ -1,0 +1,89 @@
+{
+  "resourceType": "BiologicallyDerivedProductDispense",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan. Resource ini tersedia di FHIR R5+.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/dispenses",
+      "value": "12345"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/example"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/example"
+    }
+  ],
+  "status": "in-progress",
+  "originRelationshipType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/biologicallyderived-product-dispense-origin-relationship",
+        "code": "autologous",
+        "display": "Autologous"
+      }
+    ]
+  },
+  "product": {
+    "reference": "BiologicallyDerivedProduct/example"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "matchStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/biologicallyderived-product-dispense-match-status",
+        "code": "matched",
+        "display": "Matched"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "224594008",
+            "display": "Blood bank staff"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/example"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/example"
+  },
+  "quantity": {
+    "value": 1,
+    "system": "http://unitsofmeasure.org",
+    "code": "bag"
+  },
+  "preparedDate": "2026-06-22T08:00:00Z",
+  "whenHandedOver": "2026-06-22T09:00:00Z",
+  "destination": {
+    "reference": "Location/ward"
+  },
+  "receiver": [
+    {
+      "reference": "Practitioner/nurse"
+    }
+  ],
+  "note": [
+    {
+      "text": "Dispense for immediate transfusion."
+    }
+  ],
+  "usageInstruction": "Transfuse slowly over 2 hours."
+}

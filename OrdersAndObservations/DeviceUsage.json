@@ -1,0 +1,110 @@
+{
+  "resourceType": "DeviceUsage",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/deviceusages",
+      "value": "12345"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/example"
+    }
+  ],
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "123456",
+          "display": "Monitoring"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "derivedFrom": [
+    {
+      "reference": "Procedure/example"
+    }
+  ],
+  "context": {
+    "reference": "Encounter/example"
+  },
+  "timingTiming": {
+    "repeat": {
+      "frequency": 3,
+      "period": 1,
+      "periodUnit": "d"
+    }
+  },
+  "timingPeriod": {
+    "start": "2026-06-22T08:00:00Z",
+    "end": "2026-06-29T08:00:00Z"
+  },
+  "timingDateTime": "2026-06-22T08:00:00Z",
+  "dateAsserted": "2026-06-22T09:00:00Z",
+  "usageStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/device-usage-status",
+        "code": "intended"
+      }
+    ]
+  },
+  "usageReason": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "123456",
+          "display": "Monitor O2 sat"
+        }
+      ]
+    }
+  ],
+  "informationSource": {
+    "reference": "Patient/example"
+  },
+  "device": {
+    "reference": "Device/example"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "116680003",
+          "display": "Acute appendicitis"
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/example"
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "48800003",
+        "display": "Ear lobule structure"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Pasien merasa nyaman menggunakan alat ini."
+    }
+  ]
+}

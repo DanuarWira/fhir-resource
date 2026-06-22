@@ -1,0 +1,109 @@
+{
+  "resourceType": "ClinicalImpression",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/clinical-impressions",
+      "value": "12345"
+    }
+  ],
+  "status": "completed",
+  "statusReason": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "398166005",
+        "display": "Performed"
+      }
+    ]
+  },
+  "description": "Asesmen klinis paska kecelakaan ringan",
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "effectiveDateTime": "2026-06-22T10:00:00Z",
+  "effectivePeriod": {
+    "start": "2026-06-22T10:00:00Z",
+    "end": "2026-06-22T10:30:00Z"
+  },
+  "date": "2026-06-22T10:30:00Z",
+  "assessor": {
+    "reference": "Practitioner/example",
+    "display": "Dr. Andi"
+  },
+  "previous": {
+    "reference": "ClinicalImpression/previous-example"
+  },
+  "problem": [
+    {
+      "reference": "Condition/example"
+    }
+  ],
+  "investigation": [
+    {
+      "code": {
+        "text": "Pemeriksaan Fisik Dasar"
+      },
+      "item": [
+        {
+          "reference": "Observation/example"
+        }
+      ]
+    }
+  ],
+  "protocol": [
+    "http://example.org/protocols/trauma-assessment"
+  ],
+  "summary": "Pasien tampak stabil, memar ringan di lengan kanan.",
+  "finding": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1912002",
+            "display": "Fall"
+          }
+        ]
+      },
+      "itemReference": {
+        "reference": "Condition/example"
+      },
+      "basis": "Pengakuan pasien"
+    }
+  ],
+  "prognosisCodeableConcept": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "170968001",
+          "display": "Good prognosis"
+        }
+      ]
+    }
+  ],
+  "prognosisReference": [
+    {
+      "reference": "RiskAssessment/example"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "DiagnosticReport/example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Boleh pulang, observasi di rumah tangga selama 24 jam."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType": "Linkage",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "active": true,
+  "author": {
+    "reference": "Practitioner/example",
+    "display": "Sistem Rekam Medis"
+  },
+  "item": [
+    {
+      "type": "source",
+      "resource": {
+        "reference": "Condition/example-1",
+        "display": "Asma (Kunjungan 1)"
+      }
+    },
+    {
+      "type": "alternate",
+      "resource": {
+        "reference": "Condition/example-2",
+        "display": "Asma Bronkial (Kunjungan 2)"
+      }
+    }
+  ]
+}

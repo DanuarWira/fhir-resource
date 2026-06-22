@@ -1,0 +1,136 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.3.6.1.4.1.21367.2005.3.7.1234"
+    }
+  ],
+  "status": "current",
+  "docStatus": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "34108-1",
+        "display": "Outpatient Note"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "11488-4",
+          "display": "Consultation Note"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "date": "2026-06-22T10:00:00Z",
+  "author": [
+    {
+      "reference": "Practitioner/example"
+    }
+  ],
+  "authenticator": {
+    "reference": "Practitioner/supervisor"
+  },
+  "custodian": {
+    "reference": "Organization/hospital"
+  },
+  "relatesTo": [
+    {
+      "code": "replaces",
+      "target": {
+        "reference": "DocumentReference/old-example"
+      }
+    }
+  ],
+  "description": "Catatan Konsultasi Rawat Jalan",
+  "securityLabel": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+          "code": "N",
+          "display": "normal"
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/pdf",
+        "language": "id",
+        "url": "http://example.org/docs/consult-note.pdf",
+        "size": 10245,
+        "hash": "YmFzZTY0",
+        "title": "Konsultasi Jantung"
+      },
+      "format": {
+        "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+        "code": "urn:ihe:iti:xds-sd:pdf:2008",
+        "display": "PDF"
+      }
+    }
+  ],
+  "context": {
+    "encounter": [
+      {
+        "reference": "Encounter/example"
+      }
+    ],
+    "event": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "123456",
+            "display": "Cardiac exam"
+          }
+        ]
+      }
+    ],
+    "period": {
+      "start": "2026-06-22T08:00:00Z",
+      "end": "2026-06-22T09:00:00Z"
+    },
+    "facilityType": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "22232009",
+          "display": "Hospital"
+        }
+      ]
+    },
+    "practiceSetting": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394579002",
+          "display": "Cardiology"
+        }
+      ]
+    },
+    "sourcePatientInfo": {
+      "reference": "Patient/example"
+    },
+    "related": [
+      {
+        "reference": "Condition/example"
+      }
+    ]
+  }
+}

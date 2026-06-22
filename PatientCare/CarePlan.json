@@ -1,0 +1,210 @@
+{
+  "resourceType": "CarePlan",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/careplans",
+      "value": "12345"
+    }
+  ],
+  "instantiatesCanonical": [
+    "PlanDefinition/weight-loss-protocol"
+  ],
+  "instantiatesUri": [
+    "http://example.org/protocol-for-weight-loss"
+  ],
+  "basedOn": [
+    {
+      "reference": "CarePlan/previous-plan"
+    }
+  ],
+  "replaces": [
+    {
+      "reference": "CarePlan/old-plan"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "CarePlan/master-plan"
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "412776001",
+          "display": "Weight control management"
+        }
+      ]
+    }
+  ],
+  "title": "Rencana Penurunan Berat Badan Ekstensif",
+  "description": "Program diet dan olahraga terpadu selama 6 bulan",
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "period": {
+    "start": "2026-06-01",
+    "end": "2026-12-31"
+  },
+  "created": "2026-05-20",
+  "author": {
+    "reference": "Practitioner/example",
+    "display": "Dr. Andi"
+  },
+  "contributor": [
+    {
+      "reference": "Practitioner/dietitian",
+      "display": "Siti (Ahli Gizi)"
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/example"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/example",
+      "display": "Obesitas"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/weight"
+    }
+  ],
+  "goal": [
+    {
+      "reference": "Goal/example"
+    }
+  ],
+  "activity": [
+    {
+      "outcomeCodeableConcept": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "161832001",
+              "display": "Progressive weight loss"
+            }
+          ]
+        }
+      ],
+      "outcomeReference": [
+        {
+          "reference": "Observation/weight-tracking"
+        }
+      ],
+      "progress": [
+        {
+          "time": "2026-06-15",
+          "text": "Pasien patuh pada diet di minggu pertama."
+        }
+      ],
+      "reference": {
+        "reference": "NutritionOrder/example"
+      },
+      "detail": {
+        "kind": "NutritionOrder",
+        "instantiatesCanonical": [
+          "ActivityDefinition/diet-plan"
+        ],
+        "instantiatesUri": [
+          "http://example.org/diet-guidelines"
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "284071006",
+              "display": "Dietary treatment"
+            }
+          ]
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "414916001",
+                "display": "Obesity"
+              }
+            ]
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/example"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/example"
+          }
+        ],
+        "status": "in-progress",
+        "statusReason": {
+          "text": "Pasien kesulitan dengan menu pagi."
+        },
+        "doNotPerform": false,
+        "scheduledTiming": {
+          "repeat": {
+            "frequency": 3,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "scheduledPeriod": {
+          "start": "2026-06-01",
+          "end": "2026-12-31"
+        },
+        "scheduledString": "Setiap hari saat makan",
+        "location": {
+          "reference": "Location/home",
+          "display": "Rumah Pasien"
+        },
+        "performer": [
+          {
+            "reference": "Patient/example",
+            "display": "Budi Santoso"
+          }
+        ],
+        "productCodeableConcept": {
+          "text": "Meal Replacement Shake"
+        },
+        "productReference": {
+          "reference": "Medication/example"
+        },
+        "dailyAmount": {
+          "value": 1500,
+          "unit": "kcal",
+          "system": "http://unitsofmeasure.org",
+          "code": "kcal"
+        },
+        "quantity": {
+          "value": 1,
+          "unit": "serving"
+        },
+        "description": "Diet rendah kalori 1500 kcal per hari."
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Pasien sangat termotivasi."
+    }
+  ]
+}

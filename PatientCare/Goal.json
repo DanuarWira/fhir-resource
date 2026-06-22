@@ -1,0 +1,148 @@
+{
+  "resourceType": "Goal",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/goals",
+      "value": "12345"
+    }
+  ],
+  "lifecycleStatus": "active",
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "code": "in-progress",
+        "display": "In Progress"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+          "code": "dietary"
+        }
+      ]
+    }
+  ],
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+        "code": "high-priority",
+        "display": "High Priority"
+      }
+    ]
+  },
+  "description": {
+    "text": "Turunkan berat badan menjadi 70kg"
+  },
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "startDate": "2026-06-01",
+  "startCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "32485007",
+        "display": "Admission to hospital"
+      }
+    ]
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29463-7",
+            "display": "Body Weight"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": 70,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      },
+      "detailRange": {
+        "low": {
+          "value": 68
+        },
+        "high": {
+          "value": 72
+        }
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "161832001",
+            "display": "Progressive weight loss"
+          }
+        ]
+      },
+      "detailString": "Menurun minimal 1 kg per minggu",
+      "detailBoolean": true,
+      "detailInteger": 70,
+      "detailRatio": {
+        "numerator": {
+          "value": 1
+        },
+        "denominator": {
+          "value": 2
+        }
+      },
+      "dueDate": "2026-12-31",
+      "dueDuration": {
+        "value": 6,
+        "unit": "months",
+        "system": "http://unitsofmeasure.org",
+        "code": "mo"
+      }
+    }
+  ],
+  "statusDate": "2026-06-15",
+  "statusReason": "Pasien menunjukkan kemajuan yang baik",
+  "expressedBy": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "addresses": [
+    {
+      "reference": "Condition/example",
+      "display": "Obesitas"
+    }
+  ],
+  "note": [
+    {
+      "text": "Target ini disepakati bersama dengan pasien."
+    }
+  ],
+  "outcomeCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "278180004",
+          "display": "Weight reduced"
+        }
+      ]
+    }
+  ],
+  "outcomeReference": [
+    {
+      "reference": "Observation/example",
+      "display": "Data observasi berat badan pasien"
+    }
+  ]
+}

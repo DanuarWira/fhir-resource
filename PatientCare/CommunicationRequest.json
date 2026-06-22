@@ -1,0 +1,102 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.org/communication-requests",
+      "value": "12345"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "CarePlan/example"
+    }
+  ],
+  "replaces": [
+    {
+      "reference": "CommunicationRequest/old-request"
+    }
+  ],
+  "groupIdentifier": {
+    "system": "http://acme.org/groups",
+    "value": "group1"
+  },
+  "status": "active",
+  "statusReason": {
+    "text": "Menunggu respon pasien"
+  },
+  "category": [
+    {
+      "text": "Reminder Jadwal"
+    }
+  ],
+  "priority": "routine",
+  "doNotPerform": false,
+  "medium": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode",
+          "code": "SMS",
+          "display": "SMS"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "about": [
+    {
+      "reference": "Appointment/example"
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "payload": [
+    {
+      "contentString": "Jangan lupa jadwal kontrol Anda besok jam 10 pagi."
+    }
+  ],
+  "occurrenceDateTime": "2026-06-25T08:00:00Z",
+  "occurrencePeriod": {
+    "start": "2026-06-25T08:00:00Z",
+    "end": "2026-06-25T09:00:00Z"
+  },
+  "authoredOn": "2026-06-22T10:00:00Z",
+  "requester": {
+    "reference": "Practitioner/example",
+    "display": "Bagian Pendaftaran RS"
+  },
+  "recipient": [
+    {
+      "reference": "Patient/example",
+      "display": "Budi Santoso"
+    }
+  ],
+  "sender": {
+    "reference": "Organization/hospital",
+    "display": "Sistem Pengingat RS"
+  },
+  "reasonCode": [
+    {
+      "text": "Pengingat otomatis"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Appointment/example"
+    }
+  ],
+  "note": [
+    {
+      "text": "Pasien preferensi dikontak via SMS."
+    }
+  ]
+}
