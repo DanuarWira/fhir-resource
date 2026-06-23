@@ -1,0 +1,210 @@
+{
+  "resourceType": "VerificationResult",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "target": [
+    {
+      "reference": "Practitioner/example",
+      "display": "dr. Andi Wijaya, Sp.PD"
+    }
+  ],
+  "targetLocation": [
+    "Practitioner.qualification[0]"
+  ],
+  "need": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/need",
+        "code": "periodic",
+        "display": "Periodic"
+      }
+    ],
+    "text": "Verifikasi Berkala"
+  },
+  "status": "validated",
+  "statusDate": "2026-06-01T10:00:00+07:00",
+  "validationType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/validation-type",
+        "code": "primary",
+        "display": "Primary Source"
+      }
+    ],
+    "text": "Sumber Primer"
+  },
+  "validationProcess": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/validation-process",
+          "code": "multi",
+          "display": "Multiple Sources"
+        }
+      ],
+      "text": "Verifikasi dari Beberapa Sumber"
+    }
+  ],
+  "frequency": {
+    "repeat": {
+      "frequency": 1,
+      "period": 1,
+      "periodUnit": "a"
+    }
+  },
+  "lastPerformed": "2026-06-01T10:00:00+07:00",
+  "nextScheduled": "2027-06-01",
+  "failureAction": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/failure-action",
+        "code": "fatal",
+        "display": "Fatal"
+      }
+    ],
+    "text": "Jika gagal verifikasi, izin praktek ditangguhkan"
+  },
+  "primarySource": [
+    {
+      "who": {
+        "reference": "Organization/kki",
+        "display": "Konsil Kedokteran Indonesia (KKI)"
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/primary-source-type",
+              "code": "lic-board",
+              "display": "License Board"
+            }
+          ],
+          "text": "Badan Lisensi"
+        }
+      ],
+      "communicationMethod": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method",
+              "code": "pull",
+              "display": "Pull"
+            }
+          ],
+          "text": "Tarik Data dari Sumber"
+        }
+      ],
+      "validationStatus": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/validation-status",
+            "code": "successful",
+            "display": "Successful"
+          }
+        ],
+        "text": "Berhasil"
+      },
+      "validationDate": "2026-06-01T10:00:00+07:00",
+      "canPushUpdates": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/can-push-updates",
+            "code": "yes",
+            "display": "Yes"
+          }
+        ]
+      },
+      "pushTypeAvailable": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/push-type-available",
+              "code": "replace",
+              "display": "Replace"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "attestation": {
+    "who": {
+      "reference": "Practitioner/example",
+      "display": "dr. Andi Wijaya, Sp.PD"
+    },
+    "onBehalfOf": {
+      "reference": "Organization/example",
+      "display": "RS Harapan Kita"
+    },
+    "communicationMethod": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method",
+          "code": "manual",
+          "display": "Manual"
+        }
+      ],
+      "text": "Verifikasi Manual"
+    },
+    "date": "2026-05-15",
+    "sourceIdentityCertificate": "Sertifikat STR No. STR-123456789 diterbitkan oleh KKI.",
+    "proxyIdentityCertificate": "Surat Izin Praktik (SIP) diterbitkan oleh Dinas Kesehatan DKI Jakarta.",
+    "proxySignature": {
+      "type": [
+        {
+          "system": "urn:iso-astm:E1762-95:2013",
+          "code": "1.2.840.10065.1.12.1.5",
+          "display": "Verification Signature"
+        }
+      ],
+      "when": "2026-05-15T14:00:00+07:00",
+      "who": {
+        "reference": "Organization/dinkes-dki",
+        "display": "Dinas Kesehatan DKI Jakarta"
+      },
+      "data": "base64-encoded-signature-data"
+    },
+    "sourceSignature": {
+      "type": [
+        {
+          "system": "urn:iso-astm:E1762-95:2013",
+          "code": "1.2.840.10065.1.12.1.5",
+          "display": "Verification Signature"
+        }
+      ],
+      "when": "2026-05-10T10:00:00+07:00",
+      "who": {
+        "reference": "Organization/kki",
+        "display": "Konsil Kedokteran Indonesia"
+      },
+      "data": "base64-encoded-kki-signature"
+    }
+  },
+  "validator": [
+    {
+      "organization": {
+        "reference": "Organization/example",
+        "display": "RS Harapan Kita - Bagian Kredensial"
+      },
+      "identityCertificate": "Sertifikat kredensial RS diterbitkan oleh KARS.",
+      "attestationSignature": {
+        "type": [
+          {
+            "system": "urn:iso-astm:E1762-95:2013",
+            "code": "1.2.840.10065.1.12.1.5",
+            "display": "Verification Signature"
+          }
+        ],
+        "when": "2026-06-01T10:00:00+07:00",
+        "who": {
+          "reference": "Organization/example",
+          "display": "RS Harapan Kita"
+        },
+        "data": "base64-encoded-hospital-signature"
+      }
+    }
+  ]
+}

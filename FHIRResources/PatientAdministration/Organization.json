@@ -1,0 +1,130 @@
+{
+  "resourceType": "Organization",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ]
+      },
+      "system": "https://fhir.kemkes.go.id/id/organisasi",
+      "value": "ORG-RS-001"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        }
+      ],
+      "text": "Penyedia Layanan Kesehatan"
+    }
+  ],
+  "name": "RS Harapan Kita",
+  "alias": [
+    "Rumah Sakit Jantung dan Pembuluh Darah Harapan Kita",
+    "RSJPDHK"
+  ],
+  "description": "Rumah sakit khusus jantung dan pembuluh darah kelas A di Jakarta.",
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ],
+        "text": "Administrasi"
+      },
+      "name": {
+        "use": "official",
+        "text": "Bagian Administrasi RS Harapan Kita"
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+62-21-5684-0085",
+          "use": "work"
+        },
+        {
+          "system": "fax",
+          "value": "+62-21-5601-816",
+          "use": "work"
+        },
+        {
+          "system": "email",
+          "value": "admin@rs-harapankita.co.id",
+          "use": "work"
+        },
+        {
+          "system": "url",
+          "value": "https://www.rs-harapankita.co.id",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "use": "work",
+        "type": "physical",
+        "line": [
+          "Jl. Letjen S. Parman Kav. 87"
+        ],
+        "city": "Jakarta Barat",
+        "state": "DKI Jakarta",
+        "postalCode": "11420",
+        "country": "ID"
+      }
+    }
+  ],
+  "partOf": {
+    "reference": "Organization/kemenkes",
+    "display": "Kementerian Kesehatan RI"
+  },
+  "endpoint": [
+    {
+      "reference": "Endpoint/rs-harapankita-fhir"
+    }
+  ],
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "http://example.org/accreditation",
+          "value": "ACC-2024-001"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/organization-qualification",
+            "code": "accreditation",
+            "display": "Accreditation"
+          }
+        ],
+        "text": "Akreditasi Paripurna"
+      },
+      "period": {
+        "start": "2024-01-01",
+        "end": "2028-12-31"
+      },
+      "issuer": {
+        "display": "KARS (Komisi Akreditasi Rumah Sakit)"
+      }
+    }
+  ]
+}

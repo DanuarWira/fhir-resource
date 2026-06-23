@@ -1,0 +1,147 @@
+{
+  "resourceType": "Location",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan dalam implementasi nyata.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://rs-example.co.id/locations",
+      "value": "LOC-POLI-INT-001"
+    }
+  ],
+  "status": "active",
+  "operationalStatus": {
+    "system": "http://terminology.hl7.org/CodeSystem/v2-0116",
+    "code": "O",
+    "display": "Occupied"
+  },
+  "name": "Poli Penyakit Dalam",
+  "alias": [
+    "Poli Internis",
+    "Internal Medicine Clinic"
+  ],
+  "description": "Poliklinik Penyakit Dalam lantai 2 Gedung A, RS Harapan Kita.",
+  "mode": "instance",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OF",
+          "display": "Outpatient facility"
+        }
+      ],
+      "text": "Fasilitas Rawat Jalan"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+62-21-5555-1234 ext. 201",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "use": "work",
+        "type": "physical",
+        "line": [
+          "Gedung A Lantai 2, Jl. Letjen S. Parman Kav. 87"
+        ],
+        "city": "Jakarta Barat",
+        "state": "DKI Jakarta",
+        "postalCode": "11420",
+        "country": "ID"
+      }
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "physical",
+    "line": [
+      "Gedung A Lantai 2, Jl. Letjen S. Parman Kav. 87"
+    ],
+    "city": "Jakarta Barat",
+    "state": "DKI Jakarta",
+    "postalCode": "11420",
+    "country": "ID"
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "code": "wi",
+        "display": "Wing"
+      }
+    ],
+    "text": "Sayap Gedung"
+  },
+  "position": {
+    "longitude": 106.7925,
+    "latitude": -6.1820,
+    "altitude": 10
+  },
+  "managingOrganization": {
+    "reference": "Organization/example",
+    "display": "RS Harapan Kita"
+  },
+  "partOf": {
+    "reference": "Location/gedung-a",
+    "display": "Gedung A"
+  },
+  "characteristic": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/location-characteristic",
+          "code": "wheelchair",
+          "display": "Wheelchair accessible"
+        }
+      ],
+      "text": "Akses Kursi Roda"
+    }
+  ],
+  "hoursOfOperation": [
+    {
+      "availableTime": [
+        {
+          "daysOfWeek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "availableStartTime": "08:00:00",
+          "availableEndTime": "15:00:00"
+        },
+        {
+          "daysOfWeek": [
+            "sat"
+          ],
+          "availableStartTime": "08:00:00",
+          "availableEndTime": "12:00:00"
+        }
+      ]
+    }
+  ],
+  "virtualService": [
+    {
+      "channelType": {
+        "system": "http://terminology.hl7.org/CodeSystem/virtual-service-type",
+        "code": "video-conference",
+        "display": "Video Conference"
+      },
+      "addressUrl": "https://telehealth.rs-example.co.id/poli-internis",
+      "maxParticipants": 2
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/poli-internis-fhir"
+    }
+  ]
+}

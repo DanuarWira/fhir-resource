@@ -1,0 +1,265 @@
+{
+  "resourceType": "Appointment",
+  "id": "example-comprehensive",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Catatan: Hapus struktur/field yang tidak Anda perlukan. Field recurrenceTemplate hanya digunakan untuk janji temu berulang.</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://rs-example.co.id/appointments",
+      "value": "APT-2026-005678"
+    }
+  ],
+  "status": "booked",
+  "cancellationReason": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+        "code": "pat-crs",
+        "display": "Patient: Canceled via automated reminder system"
+      }
+    ],
+    "text": "Contoh alasan pembatalan (jika status=cancelled)"
+  },
+  "class": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        }
+      ],
+      "text": "Rawat Jalan"
+    }
+  ],
+  "serviceCategory": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/service-category",
+          "code": "17",
+          "display": "General Practice"
+        }
+      ]
+    }
+  ],
+  "serviceType": [
+    {
+      "concept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "124",
+            "display": "General Practice"
+          }
+        ],
+        "text": "Konsultasi Penyakit Dalam"
+      }
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394802001",
+          "display": "General medicine"
+        }
+      ],
+      "text": "Penyakit Dalam"
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+        "code": "FOLLOWUP",
+        "display": "A follow up visit from a previous appointment"
+      }
+    ],
+    "text": "Kunjungan Kontrol"
+  },
+  "reason": [
+    {
+      "concept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185389009",
+            "display": "Follow-up visit"
+          }
+        ],
+        "text": "Kontrol Paska Rawat Inap"
+      }
+    }
+  ],
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+        "code": "R",
+        "display": "routine"
+      }
+    ],
+    "text": "Rutin"
+  },
+  "description": "Kontrol paska rawat inap untuk evaluasi kondisi jantung.",
+  "replaces": [
+    {
+      "reference": "Appointment/previous-apt"
+    }
+  ],
+  "virtualService": [
+    {
+      "channelType": {
+        "system": "http://terminology.hl7.org/CodeSystem/virtual-service-type",
+        "code": "video-conference",
+        "display": "Video Conference"
+      },
+      "addressUrl": "https://telehealth.rs-example.co.id/session/apt-005678"
+    }
+  ],
+  "supportingInformation": [
+    {
+      "reference": "Observation/blood-pressure",
+      "display": "Hasil Tekanan Darah Terakhir"
+    }
+  ],
+  "previousAppointment": {
+    "reference": "Appointment/initial-visit"
+  },
+  "originatingAppointment": {
+    "reference": "Appointment/initial-visit"
+  },
+  "start": "2026-07-01T09:00:00+07:00",
+  "end": "2026-07-01T09:30:00+07:00",
+  "minutesDuration": 30,
+  "requestedPeriod": [
+    {
+      "start": "2026-07-01T08:00:00+07:00",
+      "end": "2026-07-01T12:00:00+07:00"
+    }
+  ],
+  "slot": [
+    {
+      "reference": "Slot/slot-090000"
+    }
+  ],
+  "account": [
+    {
+      "reference": "Account/example"
+    }
+  ],
+  "created": "2026-06-25T14:00:00+07:00",
+  "cancellationDate": "2026-06-30T10:00:00+07:00",
+  "note": [
+    {
+      "text": "Pasien diminta membawa hasil lab terakhir."
+    }
+  ],
+  "patientInstruction": [
+    {
+      "concept": {
+        "text": "Silakan datang 30 menit sebelum jadwal untuk registrasi. Bawa kartu BPJS dan hasil lab terakhir."
+      }
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/follow-up-request"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Budi Santoso"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "ATND",
+              "display": "attender"
+            }
+          ]
+        }
+      ],
+      "period": {
+        "start": "2026-07-01T09:00:00+07:00",
+        "end": "2026-07-01T09:30:00+07:00"
+      },
+      "actor": {
+        "reference": "Practitioner/example",
+        "display": "dr. Andi Wijaya, Sp.PD"
+      },
+      "required": true,
+      "status": "accepted"
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "SBJ",
+              "display": "subject"
+            }
+          ]
+        }
+      ],
+      "actor": {
+        "reference": "Patient/example",
+        "display": "Budi Santoso"
+      },
+      "required": true,
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "Location/poli-internis",
+        "display": "Poli Penyakit Dalam"
+      },
+      "required": true,
+      "status": "accepted"
+    }
+  ],
+  "recurrenceId": 1,
+  "occurrenceChanged": false,
+  "recurrenceTemplate": [
+    {
+      "timezone": {
+        "coding": [
+          {
+            "system": "https://www.iana.org/time-zones",
+            "code": "Asia/Jakarta"
+          }
+        ]
+      },
+      "recurrenceType": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/appointment-recurrence-type",
+            "code": "weekly",
+            "display": "Weekly"
+          }
+        ]
+      },
+      "lastOccurrenceDate": "2026-09-30",
+      "occurrenceCount": 12,
+      "weeklyTemplate": {
+        "monday": true,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false,
+        "sunday": false,
+        "weekInterval": 2
+      }
+    }
+  ]
+}
