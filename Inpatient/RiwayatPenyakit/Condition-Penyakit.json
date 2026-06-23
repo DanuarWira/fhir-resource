@@ -1,0 +1,32 @@
+{
+  "component": [
+    {
+      "clinicalStatus": "active",
+      "system": "http://snomed.info/sct",
+      "code": "38341003",
+      "display": "Hypertensive disorder",
+      "text": "Hipertensi"
+    },
+    {
+      "clinicalStatus": "active",
+      "system": "http://snomed.info/sct",
+      "code": "73211009",
+      "display": "Diabetes mellitus",
+      "text": "Diabetes melitus"
+    },
+    {
+      "clinicalStatus": "inactive",
+      "system": "http://snomed.info/sct",
+      "code": "195967001",
+      "display": "Asthma",
+      "text": "Asma"
+    },
+    {
+      "clinicalStatus": "inactive",
+      "system": "http://snomed.info/sct",
+      "code": "36971009",
+      "display": "Sinusitis",
+      "text": "Sinusitis"
+    }
+  ]
+}

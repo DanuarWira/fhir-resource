@@ -1,0 +1,34 @@
+{
+  "category": "food",
+  "criticality": "high",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "430747003",
+      "display": "Acetylcarnitine",
+      "text": "Asetilkarinitin"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "79778003",
+      "display": "Acetylene",
+      "text": "Asetilen"
+    }
+  ],
+  "codeText": "Alergi terhadap asetilkarinitin dan asetilen",
+  "reaction": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "31996006",
+      "display": "Vasculitis",
+      "text": "Vaskulitis"
+    },
+    {
+      "system": "http://snomed.info/sct",
+      "code": "51599000",
+      "display": "Edema of larynx",
+      "text": "Edema laring"
+    }
+  ],
+  "reactionDescription": "Pasien mengalami reaksi berupa vaskulitis dan edema laring"
+}
