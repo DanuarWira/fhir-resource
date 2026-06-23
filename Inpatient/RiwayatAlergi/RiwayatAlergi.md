@@ -1,4 +1,4 @@
-# AllergyIntolerance — Riwayat Alergi
+# Riwayat Alergi
 
 Dokumen ini menjelaskan struktur JSON yang digunakan untuk mencatat **riwayat alergi** pasien rawat inap. JSON ini merupakan representasi sederhana (*simplified*) dari resource FHIR [`AllergyIntolerance`](https://hl7.org/fhir/allergyintolerance.html) yang disesuaikan untuk kebutuhan integrasi sistem informasi rumah sakit.
 
@@ -232,5 +232,5 @@ Ringkasan naratif dari seluruh reaksi klinis yang dialami pasien dalam satu kali
 
 ## Referensi
 
-- [FHIR R4 — AllergyIntolerance](https://hl7.org/fhir/R4/allergyintolerance.html)
+- [FHIR R4 — AllergyIntolerance](https://hl7.org/fhir/R5/allergyintolerance.html)
 - [SNOMED CT Browser](https://browser.ihtsdotools.org/)
