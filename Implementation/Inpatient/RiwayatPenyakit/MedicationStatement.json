@@ -1,0 +1,12 @@
+{
+  "resourceType": "MedicationStatement",
+  "component": [
+    {
+      "system": "http://sys-ids.kemkes.go.id/kfa",
+      "code": "93001295",
+      "display": "Metformin 500 mg tablet",
+      "text": "Metformin 500 mg tablet",
+      "description": "isi deskripsi riwayat pengobatan"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
-  "condition": [
+  "resourceType": "FamilyMemberHistory",
+  "component": [
     {
       "system": "http://snomed.info/sct",
       "code": "73211009",

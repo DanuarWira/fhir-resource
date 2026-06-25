@@ -1,7 +1,7 @@
 {
   "category": "food",
   "criticality": "high",
-  "code": [
+  "component": [
     {
       "system": "http://snomed.info/sct",
       "code": "430747003",
@@ -15,7 +15,7 @@
       "text": "Asetilen"
     }
   ],
-  "codeText": "Alergi terhadap asetilkarinitin dan asetilen",
+  "componentDescription": "Alergi terhadap asetilkarinitin dan asetilen",
   "reaction": [
     {
       "system": "http://snomed.info/sct",

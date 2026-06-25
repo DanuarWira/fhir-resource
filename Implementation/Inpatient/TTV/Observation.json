@@ -3,6 +3,48 @@
     {
       "code": {
         "system": "http://loinc.org",
+        "code": "80288-4",
+        "display": "Level of consciousness",
+        "text": "Tingkat Kesadaran"
+      },
+      "valueCodeableConcept": {
+        "system": "http://snomed.info/sct",
+        "code": "248234008",
+        "display": "Mentally alert",
+        "text": "Compos Mentis"
+      }
+    },
+    {
+      "code": {
+        "system": "http://loinc.org",
+        "code": "9269-2",
+        "display": "Glasgow coma score total",
+        "text": "GCS"
+      },
+      "valueQuantity": {
+        "value": 15,
+        "unit": "Skor",
+        "code": "Representasi total skor"
+      },
+      "eye": {
+        "code": "9267-6",
+        "value": 2,
+        "display": "Mata terbuka"
+      },
+      "verbal": {
+        "code": "9268-4",
+        "value": 5,
+        "display": "Respon verbal"
+      },
+      "motor": {
+        "code": "9266-8",
+        "value": 6,
+        "display": "Respon motorik"
+      }
+    },
+    {
+      "code": {
+        "system": "http://loinc.org",
         "code": "8480-6",
         "display": "Systolic blood pressure",
         "text": "Tekanan Darah Sistolik"
@@ -29,19 +71,6 @@
     {
       "code": {
         "system": "http://loinc.org",
-        "code": "8310-5",
-        "display": "Body temperature",
-        "text": "Suhu Tubuh"
-      },
-      "valueQuantity": {
-        "value": 36.5,
-        "unit": "°C",
-        "code": "Cel"
-      }
-    },
-    {
-      "code": {
-        "system": "http://loinc.org",
         "code": "8478-0",
         "display": "Mean arterial pressure",
         "text": "MAP"
@@ -57,7 +86,7 @@
         "system": "http://loinc.org",
         "code": "8867-4",
         "display": "Heart rate",
-        "text": "Nadi"
+        "text": "Denyut Jantung"
       },
       "valueQuantity": {
         "value": 80,
@@ -96,6 +125,19 @@
     {
       "code": {
         "system": "http://loinc.org",
+        "code": "8310-5",
+        "display": "Body temperature",
+        "text": "Suhu Tubuh"
+      },
+      "valueQuantity": {
+        "value": 36.5,
+        "unit": "°C",
+        "code": "Cel"
+      }
+    },
+    {
+      "code": {
+        "system": "http://loinc.org",
         "code": "9279-1",
         "display": "Respiratory rate",
         "text": "Pernapasan"
@@ -111,7 +153,7 @@
         "system": "http://loinc.org",
         "code": "2708-6",
         "display": "Oxygen saturation in Arterial blood",
-        "text": "SpO2"
+        "text": "Saturasi Oksigen (SpO2)"
       },
       "valueQuantity": {
         "value": 98,
@@ -126,11 +168,21 @@
         "display": "Oxygen assistance type",
         "text": "Alat Bantu Oksigenasi"
       },
-      "valueCodeableConcept": {
-        "system": "http://snomed.info/sct",
-        "code": "371825009",
-        "display": "Patient on oxygen",
-        "text": "Nasal kanul"
+      "device": {
+        "display": "Nasal kanul"
+      }
+    },
+    {
+      "code": {
+        "system": "http://loinc.org",
+        "code": "39156-5",
+        "display": "Body mass index",
+        "text": "BMI"
+      },
+      "valueQuantity": {
+        "value": 24.2,
+        "unit": "kg/m²",
+        "code": "kg/m2"
       }
     },
     {
@@ -138,7 +190,7 @@
         "system": "http://loinc.org",
         "code": "8302-2",
         "display": "Body height",
-        "text": "Tinggi/Panjang Badan"
+        "text": "Tinggi Badan"
       },
       "valueQuantity": {
         "value": 170,
@@ -162,14 +214,14 @@
     {
       "code": {
         "system": "http://loinc.org",
-        "code": "39156-5",
-        "display": "Body mass index",
-        "text": "BMI"
+        "code": "8335-2",
+        "display": "Ideal body weight",
+        "text": "BBI"
       },
       "valueQuantity": {
-        "value": 24.2,
-        "unit": "kg/m²",
-        "code": "kg/m2"
+        "value": 63,
+        "unit": "kg",
+        "code": "kg"
       }
     },
     {
@@ -183,19 +235,6 @@
         "value": 1.81,
         "unit": "m²",
         "code": "m2"
-      }
-    },
-    {
-      "code": {
-        "system": "http://loinc.org",
-        "code": "8335-2",
-        "display": "Ideal body weight",
-        "text": "BBI"
-      },
-      "valueQuantity": {
-        "value": 63,
-        "unit": "kg",
-        "code": "kg"
       }
     }
   ]
