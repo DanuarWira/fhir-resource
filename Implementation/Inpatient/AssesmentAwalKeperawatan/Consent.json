@@ -1,0 +1,12 @@
+{
+  "resourceType": "Consent",
+  "component": [
+    {
+      "system": "http://loinc.org",
+      "code": "59284-0",
+      "display": "Patient Consent",
+      "text": "Pola Keyakinan dan Nilai-Nilai Pribadi",
+      "description": "Pasien menolak tindakan transfusi darah berdasarkan keyakinan agamanya"
+    }
+  ]
+}

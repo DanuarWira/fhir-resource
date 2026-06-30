@@ -1,0 +1,30 @@
+{
+  "status": "active",
+  "category": "community",
+  "component": [
+    {
+      "code": {
+        "text": "Propranolol"
+      },
+      "doseQuantity": 3,
+      "frequency": 1,
+      "route": "Oral"
+    },
+    {
+      "code": {
+        "text": "Metformin 500mg"
+      },
+      "doseQuantity": 1,
+      "frequency": 3,
+      "route": "Oral"
+    },
+    {
+      "code": {
+        "text": "Amlodipine 10mg"
+      },
+      "doseQuantity": 1,
+      "frequency": 1,
+      "route": "Oral"
+    }
+  ]
+}

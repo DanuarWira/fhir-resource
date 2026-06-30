@@ -1,0 +1,22 @@
+{
+    "component": [
+        {
+            "status": "active + note",
+            "code": {
+                "text": "Propranolol"
+            },
+            "dosageInstruction": "Lanjut Aturan Berubah",
+            "doseQuantity": 3,
+            "frequency": 1,
+            "route": "Oral",
+            "source": "Resep Dokter"
+        },
+        {
+            "status": "active",
+            "code": {
+                "text": "Metformin 500mg"
+            },
+            "dosageInstruction": "Lanjut Aturan Sama"
+        }
+    ]
+}

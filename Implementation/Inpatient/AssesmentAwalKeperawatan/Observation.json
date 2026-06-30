@@ -1,0 +1,230 @@
+{
+    "resourceType": "Observation",
+    "component": [
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "271638001",
+                "display": "General condition",
+                "text": "Keadaan Umum"
+            },
+            "valueString": "Baik"
+        },
+        {
+            "code": {
+                "system": "http://loinc.org",
+                "code": "55757-9",
+                "display": "Psychological status",
+                "text": "Status Psikologis"
+            },
+            "valueCodeableConcept": {
+                "system": "http://snomed.info/sct",
+                "code": "17326005",
+                "display": "Well in self",
+                "text": "Tidak ada kelainan"
+            }
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "365470003",
+                "display": "Finding of family relationship",
+                "text": "Kualitas Hubungan Keluarga Pasien"
+            },
+            "valueString": "Baik"
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "385942004",
+                "display": "Finding of spiritual state",
+                "text": "Praktik Keagamaan Pasien"
+            },
+            "valueString": "Aktif"
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "410113000",
+                "display": "Pain assessment tool",
+                "text": "Metode Penilaian Nyeri"
+            },
+            "valueString": "Numeric Rating Scale (NRS)"
+        },
+        {
+            "code": {
+                "system": "http://loinc.org",
+                "code": "72514-3",
+                "display": "Pain severity",
+                "text": "Skor Nyeri"
+            },
+            "valueQuantity": {
+                "value": 4,
+                "unit": "Skor",
+                "code": "{score}"
+            }
+        },
+        {
+            "code": {
+                "system": "http://loinc.org",
+                "code": "57442-5",
+                "display": "Pain provocation",
+                "text": "Provokasi Nyeri"
+            },
+            "valueString": "Berjalan"
+        },
+        {
+            "code": {
+                "system": "http://loinc.org",
+                "code": "57443-3",
+                "display": "Pain quality",
+                "text": "Kualitas Nyeri"
+            },
+            "valueString": "Seperti ditusuk-tusuk"
+        },
+        {
+            "code": {
+                "system": "http://loinc.org",
+                "code": "57444-1",
+                "display": "Pain radiation",
+                "text": "Lokasi Nyeri"
+            },
+            "valueString": "Dada"
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "401124003",
+                "display": "Fall risk assessment tool",
+                "text": "Metode Penilaian Risiko Jatuh"
+            },
+            "valueString": "Skala Jatuh Morse"
+        },
+        {
+            "code": {
+                "system": "http://loinc.org",
+                "code": "62417-1",
+                "display": "Fall risk score",
+                "text": "Skor Risiko Jatuh"
+            },
+            "valueQuantity": {
+                "value": 25,
+                "unit": "Skor",
+                "code": "{score}"
+            }
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "441951000124103",
+                "display": "Risk of fall assessment status",
+                "text": "Interpretasi Risiko Jatuh"
+            },
+            "valueCodeableConcept": {
+                "code": "low",
+                "display": "Low risk",
+                "text": "Risiko Rendah"
+            }
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "",
+                "display": "",
+                "text": "Metode Penilaian Kebutuhan Fungsional"
+            },
+            "valueString": "Barthel Index"
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "384738006",
+                "display": "Functional assessment scale",
+                "text": "Total Skor Kebutuhan Fungsional"
+            },
+            "valueQuantity": {
+                "value": 100,
+                "unit": "Skor",
+                "code": "{score}"
+            }
+        },
+        {
+            "code": {
+                "system": "http://loinc.org",
+                "code": "83191-7",
+                "display": "Barthel Index",
+                "text": "Skor Barthel Index"
+            },
+            "valueQuantity": {
+                "value": 100,
+                "unit": "Skor",
+                "code": "{score}"
+            }
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "129849007",
+                "display": "Functional status",
+                "text": "Interpretasi Skor Kebutuhan Fungsional"
+            },
+            "valueCodeableConcept": {
+                "code": "independent",
+                "display": "Independent",
+                "text": "Mandiri"
+            }
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "444321006",
+                "display": "Nutritional risk assessment tool",
+                "text": "Metode Penilaian Risiko Gizi"
+            },
+            "valueCodeableConcept": {
+                "code": "MST",
+                "display": "Malnutrition Screening Tool",
+                "text": "MST"
+            }
+        },
+        {
+            "code": {
+                "system": "http://loinc.org",
+                "code": "95513-8",
+                "display": "Nutritional risk score",
+                "text": "Total Skor Skrining Gizi"
+            },
+            "valueQuantity": {
+                "value": 1,
+                "unit": "Skor",
+                "code": "{score}"
+            }
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "443743007",
+                "display": "Nutritional risk status",
+                "text": "Interpretasi Skrining Gizi"
+            },
+            "valueCodeableConcept": {
+                "code": "low",
+                "display": "Low risk",
+                "text": "Risiko Rendah"
+            }
+        },
+        {
+            "code": {
+                "system": "http://snomed.info/sct",
+                "code": "225441002",
+                "display": "Education requirement",
+                "text": "Kebutuhan Edukasi"
+            },
+            "valueCodeableConcept": {
+                "code": "yes",
+                "display": "Yes",
+                "text": "Ya"
+            }
+        }
+    ]
+}

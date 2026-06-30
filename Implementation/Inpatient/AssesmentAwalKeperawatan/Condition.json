@@ -1,0 +1,29 @@
+{
+  "resourceType": "Condition",
+  "component": [
+    {
+      "category": "complaint",
+      "system": "http://snomed.info/sct",
+      "code": "263204007",
+      "display": "Fracture of bone",
+      "text": "Patah Tulang",
+      "description": "Keluhan utama pasien saat masuk"
+    },
+    {
+      "category": "problem-list-item",
+      "system": "http://snomed.info/sct",
+      "code": "129839007",
+      "display": "At risk for infection",
+      "text": "Risiko Infeksi",
+      "description": "Diagnosa Keperawatan"
+    },
+    {
+      "category": "problem-list-item",
+      "system": "http://snomed.info/sct",
+      "code": "198818001",
+      "display": "Hemorrhage in early pregnancy",
+      "text": "Pendarahan pada kehamilan muda",
+      "description": "Diagnosa Kebidanan"
+    }
+  ]
+}

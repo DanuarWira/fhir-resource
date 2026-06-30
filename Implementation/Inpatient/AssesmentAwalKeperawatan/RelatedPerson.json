@@ -1,0 +1,12 @@
+{
+  "resourceType": "RelatedPerson",
+  "component": [
+    {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code": "SPS",
+      "display": "Spouse",
+      "text": "Suami/Istri",
+      "description": "Sistem Pendukung / Orang Terdekat Penanggung Jawab"
+    }
+  ]
+}
